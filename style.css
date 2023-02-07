@@ -16,21 +16,24 @@ body {
     background-color: hsl(217, 19%, 24%);
     border-radius: 10px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .advice-content p.advice-num {
     color: hsl(150, 100%, 66%);
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-align: center;
 }
 
 .advice-content p#quote{
     color: hsl(193, 38%, 86%);
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
+    padding: 1rem;
 }
 
-.dice {
+#dice {
     background-color: hsl(150, 100%, 66%);
     height: 45px;
     width: 45px;
@@ -41,9 +44,13 @@ body {
     margin-bottom: -20px;
 }
 
-.dice img {
+#dice:hover {
+    cursor: pointer;
+}
+
+#dice img {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    padding-top: 10px;
+    padding: 10px;
 }
